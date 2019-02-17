@@ -1,18 +1,18 @@
 // Complexity
 
-    O(n) time and O(n) space
+    O(n) time and O(1) space
 
 
 
 //Run test cases
 
-    run : cd twoNumberSum dir
+    run : cd fibonacci dir
     run : go test
 
 
 //Run benchmarking
 
-    run : cd twoNumberSum dir
+    run : cd fibonacci dir
     run : go test -bench=.
     
     
