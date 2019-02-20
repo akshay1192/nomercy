@@ -5,9 +5,45 @@ import (
 	"testing"
 )
 
-func TestTargetSumCase1(t *testing.T) {
+func TestCheckSumLoopCase1(t *testing.T) {
+	actual := CheckSumLoop([]int{8, 10, 5}, 14)
+	expected := []int{}
 
-	actual := CheckSum([]int{8, 10, 12, 13, 14, 2, 3, 4, 5}, 9)
+	if !reflect.DeepEqual(actual, expected) {
+		t.Fail()
+	}
+}
+
+func TestCheckSumLoopCase2(t *testing.T) {
+	actual := CheckSumLoop([]int{8, 10, 12, 13, 14, 2, 3, 4, 5}, 9)
+	expected := []int{4, 5}
+
+	if !reflect.DeepEqual(actual, expected) {
+		t.Error("Failed")
+	}
+}
+
+func TestCheckSumSortCase1(t *testing.T) {
+	actual := CheckSumSort([]int{8, 10, 5}, 14)
+	expected := []int{}
+
+	if !reflect.DeepEqual(actual, expected) {
+		t.Fail()
+	}
+}
+
+func TestCheckSumSortCase2(t *testing.T) {
+	actual := CheckSumSort([]int{8, 10, 12, 13, 14, 2, 3, 4, 5}, 9)
+	expected := []int{4, 5}
+
+	if !reflect.DeepEqual(actual, expected) {
+		t.Error("Failed")
+	}
+}
+
+func TestTargetSumHashCase1(t *testing.T) {
+
+	actual := CheckSumHash([]int{8, 10, 12, 13, 14, 2, 3, 4, 5}, 9)
 	expected := []int{4, 5}
 
 	if !reflect.DeepEqual(actual, expected) {
@@ -16,9 +52,9 @@ func TestTargetSumCase1(t *testing.T) {
 
 }
 
-func TestTargetSumCase2(t *testing.T) {
+func TestTargetSumHashCase2(t *testing.T) {
 
-	actual := CheckSum([]int{8, 10, 5}, 14)
+	actual := CheckSumHash([]int{8, 10, 5}, 14)
 	expected := []int{}
 
 	if !reflect.DeepEqual(actual, expected) {
@@ -29,13 +65,13 @@ func TestTargetSumCase2(t *testing.T) {
 
 func BenchmarkTargetSum(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		CheckSum([]int{8, 10, 12, 13, 14, 2, 3, 4, 5}, 9)
+		CheckSumHash([]int{8, 10, 12, 13, 14, 2, 3, 4, 5}, 9)
 	}
 }
 
 func benchmarkTargetSumWithCustomInput(inputArr []int, targetSum int, b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		CheckSum(inputArr, targetSum)
+		CheckSumHash(inputArr, targetSum)
 	}
 }
 

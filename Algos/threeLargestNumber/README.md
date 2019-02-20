@@ -1,20 +1,18 @@
 Complexity
 
-    O(2^n) time and O(n) space  ----- at a time we are using at max n stack space
-    O(n) time and ( O(n) + O(n) = O(n) ) space  ----- at a time we are using at max O(n) stack space, O(n) space for hash map
-    O(n) time and O(1) space  ----- iterative approach
+    O(n) time and O(n) space
 
 
 
 Run test cases
 
-    run : cd fibonacci dir
+    run : cd twoNumberSum dir
     run : go test
 
 
 Run benchmarking
 
-    run : cd fibonacci dir
+    run : cd twoNumberSum dir
     run : go test -bench=.
     
     

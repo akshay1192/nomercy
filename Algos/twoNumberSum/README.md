@@ -1,16 +1,17 @@
-// Complexity
+Complexity
 
-    O(n) time and O(n) space
+    O(n*n) time and O(1) space          - Loops
+    O(nlogn) time and O(1) space        - sort
+    O(n) time and O(n) space            - hash
 
 
-
-//Run test cases
+Run test cases
 
     run : cd twoNumberSum dir
     run : go test
 
 
-//Run benchmarking
+Run benchmarking
 
     run : cd twoNumberSum dir
     run : go test -bench=.
@@ -25,7 +26,7 @@
     run : go test -run=Bench -bench=.
 
 
-//Run main program
+Run main program
 
     // execution time of the program is also being shown in the output
     
