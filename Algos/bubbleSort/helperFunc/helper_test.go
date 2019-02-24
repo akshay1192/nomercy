@@ -22,3 +22,10 @@ func TestBubbleSort2(t *testing.T) {
 		t.Fail()
 	}
 }
+
+func BenchmarkBubbleSort(b *testing.B) {
+
+	for i := 0; i < b.N; i++ {
+		BubbleSort([]int{3, 2, 1, -1, 0, 8})
+	}
+}
