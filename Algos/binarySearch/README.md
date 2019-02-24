@@ -1,26 +1,24 @@
 Complexity
 
-    O(2^n) time and O(n) space  ----- at a time we are using at max n stack space
-    O(n) time and ( O(n) + O(n) = O(n) ) space  ----- at a time we are using at max O(n) stack space, O(n) space for hash map
-    O(n) time and O(1) space  ----- iterative approach
-
+    O(logN) time and O(logN) space ------ at a time we are using at max logN stack space (Recursion)
+    O(logN) time and O(1) space - Iterative approach
 
 
 Run test cases
 
-    run : cd fibonacci/helperFunc dir
+    run : cd binarySearch/helperFunc dir
     run : go test
 
 
 Run benchmarking
 
-    run : cd fibonacci dir
+    run : cd threeLargestNumber dir
     run : go test -bench=.
     
     
     // This -run flag takes in a regex pattern that can filter out the benchmarks we want to run.
     // And this will trigger both our TestTargetSumCase1,TestTargetSumCase2 and BenchmarkTargetSum functions:
-    run : go test -run=TargetSum -bench=.
+    run : go test -run=threeLargestNumber -bench=.
     
     
     // If we wanted to only run our BenchmarkTargetSum function then we could change our regex pattern to be:

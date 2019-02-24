@@ -6,7 +6,7 @@ Complexity
 
 Run test cases
 
-    run : cd threeLargestNumber dir
+    run : cd threeLargestNumber/helperFunc dir
     run : go test
 
 

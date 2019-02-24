@@ -7,7 +7,7 @@ Complexity
 
 Run test cases
 
-    run : cd twoNumberSum dir
+    run : cd twoNumberSum/helperFunc dir
     run : go test
 
 
