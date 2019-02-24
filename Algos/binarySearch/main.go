@@ -7,5 +7,5 @@ import (
 
 func main() {
 	fmt.Println(helperFunc.BinarySearchRecursion([]int{}, 9))
-	fmt.Println(helperFunc.BinarySearchIterative([]int{},1))
+	fmt.Println(helperFunc.BinarySearchIterative([]int{}, git 1))
 }

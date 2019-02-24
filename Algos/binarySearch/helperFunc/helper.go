@@ -22,12 +22,12 @@ func binarySearchRecursionHelper(array []int, target, left, right int) int {
 
 }
 
-func BinarySearchIterative(array []int,target int) int {
-	right := len(array)-1
+func BinarySearchIterative(array []int, target int) int {
+	right := len(array) - 1
 	left := 0
 
 	for left <= right {
-		mid := right - (right - left)/2
+		mid := right - (right-left)/2
 
 		if array[mid] == target {
 			return mid

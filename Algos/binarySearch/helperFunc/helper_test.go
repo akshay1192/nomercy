@@ -3,7 +3,7 @@ package helperFunc
 import "testing"
 
 func TestBinarySearchRecursion(t *testing.T) {
-	actual := BinarySearchRecursion([]int{1,2,3,4},6)
+	actual := BinarySearchRecursion([]int{1, 2, 3, 4}, 6)
 	expected := -1
 
 	if actual != expected {
@@ -12,7 +12,7 @@ func TestBinarySearchRecursion(t *testing.T) {
 }
 
 func TestBinarySearchRecursion2(t *testing.T) {
-	actual := BinarySearchRecursion([]int{-6,-1,0,1,2,3,4},-1)
+	actual := BinarySearchRecursion([]int{-6, -1, 0, 1, 2, 3, 4}, -1)
 	expected := 1
 
 	if actual != expected {
@@ -21,7 +21,7 @@ func TestBinarySearchRecursion2(t *testing.T) {
 }
 
 func TestBinarySearchIterative(t *testing.T) {
-	actual := BinarySearchIterative([]int{1,2,3,4},6)
+	actual := BinarySearchIterative([]int{1, 2, 3, 4}, 6)
 	expected := -1
 
 	if actual != expected {
@@ -30,7 +30,7 @@ func TestBinarySearchIterative(t *testing.T) {
 }
 
 func TestBinarySearchIterative2(t *testing.T) {
-	actual := BinarySearchIterative([]int{-6,-1,0,1,2,3,4},-1)
+	actual := BinarySearchIterative([]int{-6, -1, 0, 1, 2, 3, 4}, -1)
 	expected := 1
 
 	if actual != expected {
