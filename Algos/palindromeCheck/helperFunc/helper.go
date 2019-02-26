@@ -1,15 +1,17 @@
 package helperFunc
 
-func IsPalindrome(input string) bool {
+import "golang.org/x/exp/errors/fmt"
+
+func IsPalindrome(input string) {
 
 	if input == "" {
-		return false
+		return
 	}
 
-	//return palindromeReverse(input)
-	//return palindromeRecursion(input, 0)
-	//return palindromeReverseCheck(input)
-	return palindromeHalf(input)
+	fmt.Println("Palindrome reverse string : ", palindromeReverse(input))
+	fmt.Println("Palindrome reverse without string creation : ", palindromeReverseCheck(input))
+	fmt.Println("Palindrome recursion : ", palindromeRecursion(input, 0))
+	fmt.Println("Palindrome half : ", palindromeHalf(input))
 
 }
 
@@ -22,16 +24,6 @@ func palindromeReverse(input string) bool {
 	}
 
 	return string(reverseString) == input
-}
-
-// O(N) time and O(N) space
-func palindromeRecursion(input string, currentIndex int) bool {
-	if currentIndex == len(input)-1 {
-		return true
-	}
-
-	checked := palindromeRecursion(input, currentIndex+1)
-	return checked && input[len(input)-1-currentIndex] == input[currentIndex]
 }
 
 // O(N) time and O(N) space
@@ -48,6 +40,16 @@ func palindromeReverseCheck(input string) bool {
 	}
 
 	return isPalindrome
+}
+
+// O(N) time and O(N) space
+func palindromeRecursion(input string, currentIndex int) bool {
+	if currentIndex == len(input)-1 {
+		return true
+	}
+
+	checked := palindromeRecursion(input, currentIndex+1)
+	return checked && input[len(input)-1-currentIndex] == input[currentIndex]
 }
 
 // O(N) time and O(1) space
