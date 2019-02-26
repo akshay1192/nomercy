@@ -1,4 +1,4 @@
-package helper
+package helperFunc
 
 func SelectionSort(array []int) []int {
 

@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(helper.SelectionSort([]int{4, 2, 1, 5, 7}))
+	fmt.Println(helperFunc.SelectionSort([]int{4, 2, 1, 5, 7}))
 }
