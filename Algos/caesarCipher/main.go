@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/akshay1192/nomercy/Algos/Caesar_Cipher/helperFunc"
+	"github.com/akshay1192/nomercy/Algos/caesarCipher/helperFunc"
 )
 
 func main() {
