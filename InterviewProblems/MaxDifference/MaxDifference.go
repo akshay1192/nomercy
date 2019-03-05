@@ -4,7 +4,10 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
 
@@ -18,7 +21,7 @@ func main() {
 		arr = append(arr, num)
 	}
 
-	maxDiff := 0
+	maxDiff := math.MinInt16
 	minEle := arr[0]
 
 	for _, v := range arr {
