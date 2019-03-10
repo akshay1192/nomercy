@@ -20,7 +20,7 @@ type Stack struct {
 func (ss *Stack) push(element interface{}) {
 
 	ss.stack = append(ss.stack, element)
-	fmt.Println("Pushed : ",element)
+	fmt.Println("Pushed : ", element)
 	if len(ss.maxStack) == 0 {
 		ss.maxStack = append(ss.maxStack, element)
 		return
@@ -54,7 +54,7 @@ func (ss *Stack) pop() interface{} {
 	return poppedElement
 }
 
-func (ss *Stack) max() interface{}{
+func (ss *Stack) max() interface{} {
 	if len(ss.stack) == 0 {
 		return -1
 	}
@@ -62,7 +62,7 @@ func (ss *Stack) max() interface{}{
 }
 
 func main() {
-	intStackObj := Stack{stack : make([]interface{},0),maxStack:make([]interface{},0)}
+	intStackObj := Stack{stack: make([]interface{}, 0), maxStack: make([]interface{}, 0)}
 
 	intStackObj.push(50)
 	intStackObj.push(20)
@@ -74,7 +74,7 @@ func main() {
 	intStackObj.pop()
 	intStackObj.max()
 
-	stringStackObj := Stack{stack:make([]interface{},0),maxStack:make([]interface{},0)}
+	stringStackObj := Stack{stack: make([]interface{}, 0), maxStack: make([]interface{}, 0)}
 	stringStackObj.push("Akshay")
 	stringStackObj.push("Akash")
 	stringStackObj.pop()

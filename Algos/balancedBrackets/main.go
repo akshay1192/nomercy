@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(helperFunc.CheckBalancedBrackets("{}"))
+	fmt.Println(helperFunc.CheckBalancedBrackets("{[()}]"))
 }

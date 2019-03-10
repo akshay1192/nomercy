@@ -4,16 +4,16 @@ func CheckBalancedBrackets(s string) bool {
 
 	var stack []rune
 
-	mapping := map[rune]rune {
-		'}' : '{',
-		')' : '(',
-		']' : '[',
+	mapping := map[rune]rune{
+		'}': '{',
+		')': '(',
+		']': '[',
 	}
 
-	for _,char := range s {
+	for _, char := range s {
 
 		if char == 123 || char == 91 || char == 40 {
-			stack = append(stack,char)
+			stack = append(stack, char)
 		}
 
 		if char == '}' || char == ']' || char == ')' {

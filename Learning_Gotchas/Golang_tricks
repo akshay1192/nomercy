@@ -1,0 +1,22 @@
+1. No need of temp variable : array[j],array[j+1] = array[j+1],array[j]
+
+2. String is sequence of bytes but traversing a string gives runes (UTF8 - int32)
+
+3. *[]Node and  []*Node are two different things -
+
+    *[]Node : Pointer to slice of node type struct
+    []*Node : Slice having pointer of node type struct
+
+4. Slice passed as value or pointer ?
+	https://nanxiao.gitbooks.io/golang-101-hacks/content/posts/pass-slice-as-a-function-argument.html
+	https://forum.golangbridge.org/t/slice-pass-as-value-or-pointer/2866
+
+
+
+5. Sorting : https://yourbasic.org/golang/how-to-sort-in-go/
+
+
+
+
+
+

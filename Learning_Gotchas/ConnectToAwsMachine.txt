@@ -1,0 +1,17 @@
+
+* Get ip(s) including all the jump servers
+* Get pem file
+
+* Copy pem to .ssh folder
+* Change pem permission: chmod 500 <pem file>
+
+* Add the pem file in ssh registry.
+$ - ssh-add /Users/akshay/.ssh/tkbg-dms-dev.pem
+
+* Note : Incase you don’t want to add the pem file in system’s registry and want to run aws machine.
+$ ssh -i ~/.ssh/automation.pem ubuntu@54.153.51.206
+
+* Paste all ip(s) with jump server on terminal
+$ : ssh -A ubuntu@34.232.48.229
+    ssh -A ubuntu@10.0.22.221
+    ssh ec2-user@10.0.29.90

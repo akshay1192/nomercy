@@ -1,0 +1,79 @@
+* SSH commands :
+
+    ssh -i ~/.ssh/automation.pem ubuntu@54.153.51.206
+    sudo service mosquitto stop
+    sudo service mosquitto start
+
+
+
+* Go Mod commands :
+
+    export GO111MODULE=on
+    go mod init
+    go get ./…
+
+
+
+* Kafka Commands :
+
+    Setting up Kafka 
+    ----------------
+
+    Start the server
+    ----------------
+    T1 : ./bin/zookeeper-server-start ./etc/kafka/zookeeper.properties
+    T2 : ./bin/kafka-server-start ./etc/kafka/server.properties
+
+
+
+    Start Producer
+    ---------------
+    T3 : ./bin/kafka-console-producer -broker-list localhost:9092 --topic test
+
+
+
+    Start a consumer
+    ----------------
+    T4 : bin/kafka-console-consumer --bootstrap-server localhost:9092 --topic test
+
+
+
+
+    Create a topic
+    --------------
+    T : bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+
+    See the topics
+    --------------
+    Any : bin/kafka-topics.sh --list --zookeeper localhost:2181
+    Any : bin/kafka-topics.sh --zookeeper localhost:2181 --describe --topic test
+
+
+
+* Redis Commands :
+
+    Start Redis -
+
+        T1 : redis-server
+        T2 : redis-cli ping
+
+    Stop Redis -
+
+        T1 : redis-cli shutdown
+
+
+
+
+* Other Useful Command :
+
+    ps ef | grep tmediaservice
+
+    sudo lsof -i tcp:PORT
+    sudo kill -9 PID
+
+    git stash drop stash@{0}  (follows stack where last stash is indexed at 0)
+
+    GOOS=linux go build -o main
+    openssl x509 -noout -in /Users/akshay/Downloads/dev/test-routeone_tekionblr_xyz.crt -issuer
+
+
