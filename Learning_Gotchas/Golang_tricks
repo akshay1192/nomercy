@@ -11,9 +11,17 @@
 	https://nanxiao.gitbooks.io/golang-101-hacks/content/posts/pass-slice-as-a-function-argument.html
 	https://forum.golangbridge.org/t/slice-pass-as-value-or-pointer/2866
 
+5. Receiver methods can not change the base address inside that method
+
+       func(s *[]type) test () {
+           s = &xyz    // not allowed
+       }
+
+       you can append in the using pointers (base address), change values also (can be done without pointer)
 
 
-5. Sorting : https://yourbasic.org/golang/how-to-sort-in-go/
+6. Sorting : https://yourbasic.org/golang/how-to-sort-in-go/
+
 
 
 

@@ -1,4 +1,4 @@
-package MinimumRoomsOrPlatfromsRequired
+package main
 
 import (
 	"golang.org/x/exp/errors/fmt"
