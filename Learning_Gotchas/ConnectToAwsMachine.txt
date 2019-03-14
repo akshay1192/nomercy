@@ -15,3 +15,40 @@ $ ssh -i ~/.ssh/automation.pem ubuntu@54.153.51.206
 $ : ssh -A ubuntu@34.232.48.229
     ssh -A ubuntu@10.0.22.221
     ssh ec2-user@10.0.29.90
+
+
+
+Example : Connect to mongodb
+
+
+1. Get pem file for corresponding servers and save it to ~/.ssh folder
+
+    $: cd .ssh
+    $: mv /Users/akshay/Downloads/tknonprod.pem .
+
+
+2. Change pem file permissions to 500
+
+    $: chmod 500 tknonprod.pem
+
+
+3. Add the pem file in the ssh registry
+
+    $: ssh-add tknonprod.pem
+
+
+4.  Enter jump serve ip
+
+    $: ssh -A ubuntu@IP1        // Jump server 1
+    $: ssh agupta@IP2           // Jump server 2
+       (ssh username@IP2 : in this case username is : agupta and enter password given by devops team when prompted)
+
+
+    $: mongo -host "rs0/IP1:27017,IP2:27017,IP3:27017" --port 27017  -u "akshay" -p "akshay@123" --authenticationDatabase "admin"
+       (mongo url string - and IP1,IP2,IP3 are mongo server ips)
+
+
+
+
+
+
