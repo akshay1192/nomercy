@@ -12,6 +12,3 @@
    Goroutines and channels
    Goland shortcuts and debugging
    Mod /Dep / vgo
-
-   Databases
-   Golang with databases

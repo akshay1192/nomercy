@@ -1,0 +1,67 @@
+* Homebrew setup and other commands
+
+    Install homebrew : (may take sometime......so hold on)
+        $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" ————— brew help
+
+    Create .bash_profile if not present
+
+        $ cd ~
+        $ vim .bash_profile
+        Export paths in this file then run
+
+    $ source ~/.bash_profile OR . ~/.bash_profile. ( source === . )
+
+    $ env ( Check all the environment variables in MAC )
+
+    $ echo $PATH (to see just path variable)
+
+
+
+
+* Installing mongodb on mac
+
+
+    Install MongoDB (https://treehouse.github.io/installation-guides/mac/mongo-mac.html)
+        $ brew install mongodb
+
+    Setup data dir
+
+        $ cd /    (navigate to root dir)
+        $ sudo mkdir -p data/db
+        $ sudo chown -R `id -un` data/db
+
+    Start the server
+        $ mongod (runs a mongodb server (daemon) by default on 27017 port)
+        $ mongo (runs a mongodb client)
+
+
+    To stop the Mongo server (daemon)
+
+        From daemon shell
+            $ ctrl-c
+
+
+        From client shell
+            $ use admin
+            $ db.shutdownServer()
+
+
+    To exit the Mongo client
+
+        $ quit() or ctrl-c
+
+
+
+
+* Useful links
+
+    https://www.mongodb.com/blog/post/mongodb-go-driver-tutorial
+    https://medium.com/@matryer/production-ready-mongodb-in-go-for-beginners-ef6717a77219
+    https://medium.com/easyread/today-i-learn-text-search-on-mongodb-6b87cd8497c9
+    https://hackernoon.com/make-yourself-a-go-web-server-with-mongodb-go-on-go-on-go-on-48f394f24e
+    https://cloud.google.com/go/getting-started/deploy-mongodb
+
+
+    https://www.opentechguides.com/how-to/article/mongodb/118/mongodb-cheatsheat.html  (mongo commands)
+
+

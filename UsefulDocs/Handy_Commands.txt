@@ -1,7 +1,7 @@
 * SSH commands :
 
     ssh -i ~/.ssh/automation.pem ubuntu@54.153.51.206
-    sudo service mosquitto stop
+    sudo service mosquitto stop                         (mqtt server)
     sudo service mosquitto start
 
 
@@ -47,19 +47,6 @@
     --------------
     Any : bin/kafka-topics.sh --list --zookeeper localhost:2181
     Any : bin/kafka-topics.sh --zookeeper localhost:2181 --describe --topic test
-
-
-
-* Redis Commands :
-
-    Start Redis -
-
-        T1 : redis-server
-        T2 : redis-cli ping
-
-    Stop Redis -
-
-        T1 : redis-cli shutdown
 
 
 

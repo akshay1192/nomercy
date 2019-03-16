@@ -1,0 +1,44 @@
+
+Homebrew setup and other commands
+
+    Install homebrew : (may take sometime......so hold on)
+        $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" ————— brew help
+
+    Create .bash_profile if not present
+
+        $ cd ~
+        $ vim .bash_profile
+        Export paths in this file then run
+
+    $ source ~/.bash_profile OR . ~/.bash_profile. ( source === . )
+
+    $ env ( Check all the environment variables in MAC )
+
+    $ echo $PATH (to see just path variable)
+
+
+
+Install Redis (https://medium.com/@petehouston/install-and-config-redis-on-mac-os-x-via-homebrew-eb8df9a4f298)
+    $ brew install redis
+
+
+Start the server
+
+    $ redis-server                                  (runs redis server with default config on port 6379)
+    $ redis-server /usr/local/etc/redis.conf        (runs redis server with given config by default on 6379 port)
+    $ redis-cli ping                                (runs redis client and should return PONG if server is running)
+
+
+Start redis client
+    $ redis-cli
+
+
+To exit the Redis server/client
+    $ ctrl-c
+
+
+To start redis now and restart at every login:
+    $ brew services start redis
+
+If you don't want/need a background service you can just run:
+    $ redis-server /usr/local/etc/redis.conf
