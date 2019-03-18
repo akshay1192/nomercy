@@ -1,0 +1,28 @@
+package program
+
+// Do not edit the class below except for the insertKeyValuePair,
+// getValueFromKey, and getMostRecentKey methods. Feel free
+// to add new properties and methods to the class.
+type LRUCache struct {
+	maxSize int
+	// Add fields here.
+}
+
+func NewLRUCache(size int) *LRUCache {
+	// Write your code here.
+}
+
+func (cache *LRUCache) InsertKeyValuePair(key string, value int) {
+	// Write your code here.
+}
+
+// The second return value indicates whether or not the key was found
+// in the cache.
+func (cache *LRUCache) GetValueFromKey(key string) (int, bool) {
+	// Write your code here.
+}
+
+// The second return value is false if the cache is empty.
+func (cache *LRUCache) GetMostRecentKey() (string, bool) {
+	// Write your code here.
+}
