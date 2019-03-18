@@ -2,6 +2,11 @@
 
 2. String is sequence of bytes but traversing a string gives runes (UTF8 - int32)
 
+    rune can be compared as an int32 as well as char
+    Ex : char == 132    OR    char == 'a'      (where char is a rune)
+
+    string([]rune) return string
+
 3. *[]Node and  []*Node are two different things -
 
     *[]Node : Pointer to slice of node type struct
