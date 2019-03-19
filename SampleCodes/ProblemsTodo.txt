@@ -1,3 +1,1 @@
-1. Product array puzzle : https://www.youtube.com/watch?v=R745JLPox_A
-
-2. URL Shortner - DailyCodingProblem 55
+1. URL Shortner - DailyCodingProblem 55
