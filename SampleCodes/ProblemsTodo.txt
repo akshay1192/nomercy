@@ -1,1 +1,15 @@
 1. URL Shortner - DailyCodingProblem 55
+
+
+
+Instamojo
+
+
+    2. OAuth 2.0 - https://www.youtube.com/watch?v=bzGKgC3N7SY
+
+    3. Monolithic vs microservice
+
+    4. Library search (books having number from 1 - 1 million ) - binary search
+
+    5. find max of last 10 in a stream of numbers coming - priority queue and heaps
+        https://www.youtube.com/watch?v=HqPJF2L5h9U
