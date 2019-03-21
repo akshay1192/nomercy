@@ -9,7 +9,7 @@ func ShiftedBinarySearch(array []int, target int) int {
 		return binarySearch(array, target, 0, len-1)
 	}
 
-	if array[0] <= target && array[pivot] >= target {
+	if array[0] <= target {
 		return binarySearch(array, 0, pivot, target)
 	} else {
 		return binarySearch(array, pivot+1, len-1, target)
