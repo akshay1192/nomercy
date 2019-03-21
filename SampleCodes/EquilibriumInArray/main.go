@@ -67,7 +67,7 @@ func betterAppraoch(intSlice []int) int {
 // O(n) time and O(1) space
 func bestApproach(intSlice []int) int {
 	len := len(intSlice)
-	sum,leftSum := 0,0
+	sum, leftSum := 0, 0
 
 	for i := 0; i < len; i++ {
 		sum += intSlice[i]

@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	helperFunc.IsPalindrome("ba")
+	helperFunc.IsPalindrome("abcdcba")
 }

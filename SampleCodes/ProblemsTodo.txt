@@ -1,5 +1,24 @@
 1. URL Shortner - DailyCodingProblem 55
 
+2. Two number difference - problem is similar to Two number sum but we need to start our both pointer from
+   last and second last index of sorted array and move accordingly
+
+   https://www.geeksforgeeks.org/find-a-pair-with-the-given-difference/
+
+   Ex : [3 8 7 -2 -6 4]        diff : 4
+        sorted : [-6 -2 3 4 7 8]
+
+                I1 : 8-7 < 4 so decrement the 7 pointer (left) to get greater diff
+                I2 : 8 -4 == 4 found (now no more possible pair with 8(right), so decrease 8 ptr)
+                I3 : 7-4 < 4 so decrement 4 ptr(left)
+                I4 : 7-3 == 4  found (now no more possible pair with 8, so decrease 7 ptr(right))
+                I5 : 4-(-2) > 4 so decrement 4 ptr (right)
+                I6 : 3-(-2) > 4 so decrement 3 ptr (right)
+                I7 : -2-(-2) < 4 so decrement -2 ptr (left)
+                I8 : -6-(-2) == 4
+
+                take abs diff and run loop while left <= right
+
 
 
 Instamojo

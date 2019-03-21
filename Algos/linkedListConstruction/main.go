@@ -45,24 +45,21 @@ func (ll *DoublyLinkedList) setTail(node *Node) {
 
 func (ll *DoublyLinkedList) insertBefore(node, nodeToInsert *Node) {
 
-
-	fmt.Println("Before : ",node)
+	fmt.Println("Before : ", node)
 	fmt.Println("Node : ", nodeToInsert)
 
+	tail := ll.Tail
 
-	 tail := ll.Tail
+	for tail != node {
+		tail = tail.prev
+	}
 
-	 for tail != node {
-	 	tail = tail.prev
-	 }
+	prev := tail.prev
+	prev.next = node
+	tail.prev = node
 
-
-	 prev := tail.prev
-	 prev.next = node
-	 tail.prev = node
-
-	 node.prev = prev
-	 node.next = tail
+	node.prev = prev
+	node.next = tail
 
 }
 
@@ -86,27 +83,24 @@ func (ll *DoublyLinkedList) containsNodeWithValue(value int) bool {
 	// Write your code here.
 }*/
 
-
 func main() {
 
 	dll := DoublyLinkedList{}
 
-	node := Node{10,nil,nil}
+	node := Node{10, nil, nil}
 	dll.setHead(&node)
 
-	node2 := Node{11,nil,nil}
+	node2 := Node{11, nil, nil}
 	dll.setHead(&node2)
 
-	fmt.Println("main : ",&node)
+	fmt.Println("main : ", &node)
 
-
-	node3 := Node{15,nil,nil}
-	dll.insertBefore(&node,&node3)
+	node3 := Node{15, nil, nil}
+	dll.insertBefore(&node, &node3)
 
 	for dll.Head != nil {
 		fmt.Println(dll.Head.value)
 		dll.Head = dll.Head.next
 	}
-
 
 }

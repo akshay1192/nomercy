@@ -27,6 +27,14 @@
 
 6. Sorting : https://yourbasic.org/golang/how-to-sort-in-go/
 
+7. Strings in golang are immutable. So, every time we add a new char/string to our already created string then
+   a new copy is created with extra space to hold the incoming string/char ---- O(n2)
+
+   instead use []rune to append and finally convert to string using string([]rune) ----- O(n)
+
+   Ex : check palindrome check in algos folder
+
+
 
 
 

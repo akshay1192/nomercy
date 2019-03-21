@@ -10,6 +10,7 @@ func IsPalindrome(input string) {
 
 	fmt.Println("Palindrome reverse string : ", palindromeReverse(input))
 	fmt.Println("Palindrome reverse without string creation : ", palindromeReverseCheck(input))
+	fmt.Println("Palindrome reverse using rune slice in O(n) : ", palindromeReversRune(input))
 	fmt.Println("Palindrome recursion : ", palindromeRecursion(input, 0))
 	fmt.Println("Palindrome half : ", palindromeHalf(input))
 
@@ -40,6 +41,22 @@ func palindromeReverseCheck(input string) bool {
 	}
 
 	return isPalindrome
+}
+
+// O(N) time and O(N) space
+func palindromeReversRune(input string) bool {
+	var reverse []rune
+
+	for i := len(input) - 1; i >= 0; i-- {
+		reverse = append(reverse, rune(input[i]))
+	}
+
+	if string(reverse) == input {
+		return true
+	}
+
+	return false
+
 }
 
 // O(N) time and O(N) space
