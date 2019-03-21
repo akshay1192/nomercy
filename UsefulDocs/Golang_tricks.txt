@@ -1,5 +1,6 @@
 1. No need of temp variable : array[j],array[j+1] = array[j+1],array[j]
 
+
 2. String is sequence of bytes but traversing a string gives runes (UTF8 - int32)
 
     rune can be compared as an int32 as well as char
@@ -7,14 +8,25 @@
 
     string([]rune) return string
 
+
+    Also,Strings in golang are immutable. So, every time we add a new char/string to our already created string then
+    a new copy is created with extra space to hold the incoming string/char ---- O(n2)
+
+    instead use []rune to append and finally convert to string using string([]rune) ----- O(n)
+
+    Ex : check palindrome check in algos folder
+
+
 3. *[]Node and  []*Node are two different things -
 
     *[]Node : Pointer to slice of node type struct
     []*Node : Slice having pointer of node type struct
 
+
 4. Slice passed as value or pointer ?
 	https://nanxiao.gitbooks.io/golang-101-hacks/content/posts/pass-slice-as-a-function-argument.html
 	https://forum.golangbridge.org/t/slice-pass-as-value-or-pointer/2866
+
 
 5. Receiver methods can not change the base address inside that method
 
@@ -27,12 +39,6 @@
 
 6. Sorting : https://yourbasic.org/golang/how-to-sort-in-go/
 
-7. Strings in golang are immutable. So, every time we add a new char/string to our already created string then
-   a new copy is created with extra space to hold the incoming string/char ---- O(n2)
-
-   instead use []rune to append and finally convert to string using string([]rune) ----- O(n)
-
-   Ex : check palindrome check in algos folder
 
 
 
