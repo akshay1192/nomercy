@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/akshay1192/nomercy/Algos/fibonacci/helperFunc"
+	"github.com/akshay1192/nomercy/Algos/nthFibonacci/helperFunc"
 	"time"
 )
 
