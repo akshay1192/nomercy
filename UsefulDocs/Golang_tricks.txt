@@ -39,6 +39,11 @@
 
 6. Sorting : https://yourbasic.org/golang/how-to-sort-in-go/
 
+7. Working in 2d matrix
+
+        row := len(matrix)
+     	col := len(matrix[0])
+
 
 
 

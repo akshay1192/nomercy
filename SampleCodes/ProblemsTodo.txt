@@ -20,6 +20,19 @@
                 take abs diff and run loop while left <= right
 
 
+3. Next bigger number
+
+    132 -> 213
+
+4. Largest number possible from given set of integers
+
+   https://www.youtube.com/watch?v=bywFHWV0NS0
+
+   32123 -> 33221
+
+5. Maximum sum sub sequence
+
+
 
 Instamojo
 

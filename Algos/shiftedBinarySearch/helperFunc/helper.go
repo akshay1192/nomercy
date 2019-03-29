@@ -31,10 +31,13 @@ func findPivot(array []int) int {
 		if array[mid] > array[mid+1] {
 			pivot = mid
 			break
-		} else if array[mid] < array[mid-1] {
+		}
+
+		// just a optimisation, not required as such
+		/*else if array[mid] < array[mid-1] {
 			pivot = mid - 1
 			break
-		}
+		}*/
 
 		if array[low] > array[mid] {
 			high = mid - 1
