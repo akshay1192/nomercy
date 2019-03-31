@@ -45,3 +45,35 @@ Instamojo
 
     5. find max of last 10 in a stream of numbers coming - priority queue and heaps
         https://www.youtube.com/watch?v=HqPJF2L5h9U
+
+
+
+Acko
+
+    Round 1 :
+
+    1. Minimum sum path in a matrix (right,down and diagonal + All directions)
+    2. Ladder of words : https://www.geeksforgeeks.org/word-ladder-length-of-shortest-chain-to-reach-a-target-word/
+
+
+    Round 2 :
+
+
+    Mongo vs SQL
+    Kafka vs SQS
+
+    How your company's website works e2e
+
+    1. Total number of 6 digit numbers possible taking 1-9 digits (non increasing order )
+    2. Sum propagation in binary tree
+    3. Tic tac toe - return winner on every call
+
+            request - (X,0,0)
+            response - no winner yet
+
+            request - (O,1,1)
+            response - no winnner yet and so on
+
+            Do it in O(1)
+
+

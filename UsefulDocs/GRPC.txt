@@ -1,0 +1,13 @@
+Proto Compiler Setup : https://medium.com/@erika_dike/installing-the-protobuf-compiler-on-a-mac-a0d397af46b8
+
+                       https://superuser.com/questions/565988/autoconf-libtool-and-an-undefined-ac-prog-libtool
+                       (Brew install lib tool)
+
+server executable : go build -i -v -o bin/server github.com/akshay1192/nomercy/grpcProject/server
+client executable : go build -i -v -o bin/client github.com/akshay1192/nomercy/grpcProject/client
+
+$ bin/server 	- Terminal 1
+$ bin/client 	- Terminal 2
+
+Encryption TLS/SSL : https://bbengfort.github.io/programmer/2017/03/03/secure-grpc.html
+

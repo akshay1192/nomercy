@@ -44,11 +44,11 @@
         row := len(matrix)
      	col := len(matrix[0])
 
+8. Heaps in golang
 
+    https://golang.org/pkg/container/heap/
 
-
-
-
+    https://hackernoon.com/today-i-learned-using-priority-queue-in-golang-6f71868902b7
 
 
 
