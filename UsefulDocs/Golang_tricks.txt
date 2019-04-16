@@ -50,5 +50,9 @@
 
     https://hackernoon.com/today-i-learned-using-priority-queue-in-golang-6f71868902b7
 
+9. GoLint setup
 
+    http://networkbit.ch/golang-golint/
+
+    Check golint errors in go repo :  golint ./...
 

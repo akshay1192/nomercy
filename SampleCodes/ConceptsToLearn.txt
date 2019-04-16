@@ -1,0 +1,14 @@
+SQL VS NOSQL
+
+NGINX/WEB Servers
+
+OSI Model
+
+SSL/TLS handshaking : https://www.youtube.com/watch?v=4nGrOpo0Cuc&t=188s
+
+Tekion's system
+
+OAuth 2.0 : https://www.youtube.com/watch?v=M2P3A9urHnY
+            https://www.youtube.com/watch?v=2PPSXonhIck
+            https://www.youtube.com/watch?v=M2P3A9urHnY
+

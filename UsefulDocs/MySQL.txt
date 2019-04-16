@@ -1,0 +1,21 @@
+http://mindbowser.com/golang-go-with-gorm-2/
+
+http://www.zbeanztech.com/blog/important-mysql-commands
+
+
+Start mysql server :
+
+    $ mysql -u root -h localhost (https://www.cyberciti.biz/faq/how-to-connect-to-my-mysql-database-server-using-command-line-and-php/)
+
+
+
+
+
+
+
+
+
+
+
+
+

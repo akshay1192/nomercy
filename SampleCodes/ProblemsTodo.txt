@@ -62,7 +62,7 @@ Acko
     Mongo vs SQL
     Kafka vs SQS
 
-    How your company's website works e2e
+    How your company's website works end to end
 
     1. Total number of 6 digit numbers possible taking 1-9 digits (non increasing order )
     2. Sum propagation in binary tree
@@ -77,3 +77,32 @@ Acko
             Do it in O(1)
 
 
+SigTuple :
+
+   1. Dancing Array (longest subsequence having alternate + and - as difference)
+
+      1 17 5 10 13 15 10 5 16 8
+
+      ans = 7
+
+
+Grab :
+
+    Round 1 :
+
+        Next big string in dictionary
+        maximum sum without using adjacent numbers
+
+
+Datacoral :
+
+    Round 1 :
+
+        Find cycle in a graph (dfs)
+        Find missing and repeated number
+
+    Round 2 :
+
+        Find a number is power of 2 or not
+
+        Boggle : https://www.geeksforgeeks.org/boggle-find-possible-words-board-characters/
